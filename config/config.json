@@ -1,0 +1,34 @@
+{
+  "SQLALCHEMY_DATABASE_URI": "mysql+pymysql://root:root@localhost:3306/flaskdb",
+  "UPLOAD_FOLDER": "uploads",
+  "qq_email": {
+    "email_address": "2282192219@qq.com",
+    "email_password": "kyvvvohanybtdjfa"
+  },
+  "RAG": {
+    "RAGBuild": {
+      "redis_url": "redis://127.0.0.1:6379/0",
+      "embedding_model_name": "text-embedding-v1",
+      "embedding_model_api_key": "sk-f47693f62b784f23968a8181f78f0d53"
+    },
+    "RAGChatter": {
+      "api_base_url":"https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key":"sk-f47693f62b784f23968a8181f78f0d53",
+      "redis_url":"redis://localhost:6379/0",
+      "temperature":0.5
+    }
+  },
+  "image_analysis": {
+    "ImageAnalysis": {
+      "base_url":"https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key":"sk-f47693f62b784f23968a8181f78f0d53",
+      "model_name": "qvq-max"
+    }
+  },
+  "multi_modal": {
+    "audio_to_text": {
+      "relative_audio_path": "uploads/"
+    }
+  }
+
+}
